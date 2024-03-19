@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Helvetica;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#bg{
+    height: 100%;
+    width: 100%;
+    background-color:lightgray
+}
+#main{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 95%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px 40px;
+    height: 100px;
+    width: 100%;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    /*gap: 2px;  */     /*menu or icon ke bich m gap*/
+}
+
+#nav-part2{
+    display: flex;
+    gap: 2px;    /*menu or icon ke bich m gap*/
+}
+#nav-part2>i{
+    font-size: 15px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 3px 5px;
+    border-radius: 40px;
+    background-color: orangered;
+}
+
+
+#nav h3,i{
+    font-size: 15px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 5px 9px;
+    border-radius: 50px;
+}
+
+#nav h1{
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#nav button{
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 1.5px solid #000;
+    font-size: 15px;
+    font-weight: 600;      
+}
+
+#btn2{
+    /* border: none; */
+    color: white;
+    background-color: orangered;
+}
+#main>h1{                     /*main ke under direct h1 child target ho '>' nhi to sbhi h1 target ho jaye g*/
+    font-size: 130px;
+    font-weight: 1;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    /* background-color: red; */
+    width: 100%;                 /*width jo h likhe hue ki 100% lelo*/
+    text-align: center;          /*pure text ko center kr do*/
+}
+
+img{
+    height:330px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: top;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#img1                                    /* <--- yh shi trika nhi h image ko rotate krne ka */
+{                
+    /* rotate: x/-xdeg; */                /* <--- hme direct rotate property  use krne se bchna h*/
+   /* transform: rotate(-20deg);*/          /*<--rotate bhi tranform ki property hoti h PR YH UPER KI IMG TAG KI TRANSFORM PROPERTY KO OVERRIDE KR DEGI*/ 
+
+   /*isliye hme vaps se  yh likhna hoga :translate(-50%, -50%);*/
+   transform: translate(-50%, -50%) rotate(-30deg);
+}
+#img2{
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+#btm-left{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 16px;
+}
+
+#btm-right{
+    position: absolute;
+    bottom: 5.5%;
+    right: 4%;
+    
+}
+
+#main>h6{
+    position: absolute;
+    bottom: 2.5%;
+    right: 4%;
+}
